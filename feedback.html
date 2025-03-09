@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmruutCha Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="amruutcha-logo.png" alt="AmruutCha Logo" class="logo">
+        <h2>Based on your experience today, on a scale of 0 to 10, how likely are you to recommend AmruutCha to a friend or colleague?</h2>
+        
+        <div class="rating-scale">
+            <label for="rating">Least Likely</label>
+            <input type="range" id="rating" min="0" max="10" step="1">
+            <label for="rating">Most Likely</label>
+        </div>
+
+        <h3>How was your tea experience with AmruutCha?</h3>
+        <form id="feedback-form">
+            <div class="question">
+                <p>Tea Quality:</p>
+                <div class="emoji-options">
+                    <input type="radio" name="tea_quality" value="poor"> 😡
+                    <input type="radio" name="tea_quality" value="not_satisfied"> 😞
+                    <input type="radio" name="tea_quality" value="neutral"> 😐
+                    <input type="radio" name="tea_quality" value="satisfied"> 😊
+                    <input type="radio" name="tea_quality" value="very_satisfied"> 😃
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Store Experience:</p>
+                <div class="emoji-options">
+                    <input type="radio" name="store_experience" value="poor"> 😡
+                    <input type="radio" name="store_experience" value="not_satisfied"> 😞
+                    <input type="radio" name="store_experience" value="neutral"> 😐
+                    <input type="radio" name="store_experience" value="satisfied"> 😊
+                    <input type="radio" name="store_experience" value="very_satisfied"> 😃
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Staff Behaviour:</p>
+                <div class="emoji-options">
+                    <input type="radio" name="staff_behaviour" value="poor"> 😡
+                    <input type="radio" name="staff_behaviour" value="not_satisfied"> 😞
+                    <input type="radio" name="staff_behaviour" value="neutral"> 😐
+                    <input type="radio" name="staff_behaviour" value="satisfied"> 😊
+                    <input type="radio" name="staff_behaviour" value="very_satisfied"> 😃
+                </div>
+            </div>
+
+            <label for="comments">Please let us know any other feedback/suggestions</label>
+            <textarea id="comments" maxlength="500"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
